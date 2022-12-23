@@ -1,0 +1,113 @@
+*{
+    padding: 0x;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+
+}
+body{
+    background: linear-gradient(90deg, rgba(166,136,176,1) 0%, rgba(71,71,191,1) 100%);
+}
+.item{
+    padding: 10px 0px;
+}
+.nombre p{
+    padding-bottom: 5px;
+}
+.nombre input{
+    height: 30px;
+}
+#contenedor{
+    background-color: rgb(61, 61, 61);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#contenedor--cuadrado{
+    text-align: center;
+    
+}
+#contenedor--imagen{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.image-avatar{
+    max-height: 130px;
+    background-color: rgba(255, 255, 255, 0.664);
+    border: 3px solid  rgb(39, 179, 69);
+    border-radius: 50%;
+    margin: 8px;
+    transition: all 400ms ease;
+}
+.image-avatar:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.829);
+    transform: translateY(-3%);
+}
+#btn-in{
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: rgb(44, 39, 107);
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid rgba(0, 0, 0, 0.178);
+}
+
+
+
+@media (min-width: 320px) {
+    #contenedor{
+        margin: 10% 5%;
+        border-radius: 20px;
+    }
+    #contenedor--cuadrado{
+        color: white;
+    }
+
+    #contenedor--imagen{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: repeat(2, 130px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .image-avatar{
+        background-color: rgba(255, 255, 255, 0.664);
+        border: 3px solid  rgb(39, 179, 69);
+        border-radius: 50%;
+        height: 110px;
+    }
+}
+
+@media (min-width: 667px) {
+    #contenedor{
+        margin: 10% 5%;
+        border-radius: 20px;
+        height: 400px;
+    }
+    
+    .container-log{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-avatar{
+        background-color: rgba(255, 255, 255, 0.664);
+        border: 3px solid  rgb(39, 179, 69);
+        border-radius: 50%;
+        height: 100px;
+    }
+    #btn-in{
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
